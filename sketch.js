@@ -1,37 +1,37 @@
 //the people you might have been passed and words
 
 let names = [{
-  name: "akina",
+  name: "mojo",
   //word: "hey"
 }, {
-  name: "zak",
+  name: "shamzi",
   //word: "love you"
 }, {
-  name: "june",
+  name: "Pop Tart",
   //word: "sweet"
 }, {
-  name: "sara",
+  name: "nabi",
   //word: "my friend!"
 }, {
-  name: "cindia",
+  name: "Mari",
   //word: "super!"
 }, {
-  name: "nick",
+  name: "ash",
   //word: "wonderful"
 }, {
-  name: "sierra",
+  name: "kiki",
   //word: "I'm down"
 }, {
-  name: "greg",
+  name: "Pixie",
   //word: "you can do it"
 }, {
-  name: "cris",
+  name: "Bubbles",
   //word: "wanna go get some coffee?"
 }, {
-  name: "marta",
+  name: "Goose",
   //word: "bless you"
 }, {
-  name: "miguel",
+  name: "Lollipop",
   //word: "chao"
 }];
 
@@ -80,7 +80,7 @@ let firstTime = true;
 
 function preload() {
   //'assets/cat_${i}.jpeg'
-  for (let i = 0; i <= 5; i++) {
+  for (let i = 0; i <= 7; i++) {
     cats[i] = loadImage("assets/cat_" + i + ".png")
   }
 }
@@ -95,8 +95,13 @@ function setup() {
   textSize(12);
   imageMode(CENTER);
   frameRate(8);
+  textFont()
 
   //text("click to find your destiny moment of bumping into someone", 50, 50);
+  textFont('Homemade Apple');
+  text("start your radomizer with writing greetings or reactions.", 50, 50);
+  text("then, cat will answer to you", 50, 80);
+  text("ex) chao, hello, omg, cool!", 50, 110);
 
   //button = createButton("click to randomize");
   startRadomizerbutton = select("#rButton");
